@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "sharedenderchest",
+  "version": "${version}",
+
+  "name": "Shared Ender Chest",
+  "description": "All players ender chests are shared",
+  "authors": [
+    "topisani"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/sharedenderchest/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "com.topisani.sharedenderchest.SharedEnderChest"
+    ]
+  },
+  "mixins": [
+    "sharedenderchest.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
